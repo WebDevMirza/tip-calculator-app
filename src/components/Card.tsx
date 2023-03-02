@@ -74,7 +74,7 @@ const Card = () => {
 
   return (
     <>
-      <section className="card-wrapper">
+      <div className="card-wrapper">
         <div className="bill-section">
           <div className="gocho-bill">
             <label className="bill-title" htmlFor="bill_id">
@@ -165,7 +165,7 @@ const Card = () => {
             </button>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
