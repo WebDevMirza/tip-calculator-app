@@ -18,12 +18,12 @@ const Card = () => {
 
     let tipPerPerson = (bill * tip) / 100 / people;
     setTAPP(() => {
-      return error ? 0.0 : tipPerPerson;
+      return tipPerPerson;
     });
 
     setTotalAPP(() => {
       let billPerPerson = bill / people;
-      return error ? 0.0 : billPerPerson + tipPerPerson;
+      return billPerPerson + tipPerPerson;
     });
 
     setError(false);
