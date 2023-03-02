@@ -69,9 +69,12 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+input::placeholder {
+  color: var(--VeryDarkCyan);
+}
+
 .btn-custom::placeholder {
   text-align: center;
-  color: var(--VeryDarkCyan);
 }
 
 .bill-title {
@@ -174,4 +177,26 @@ button[type="reset"] {
 .btn-disabled {
   background-color: var(--DarkGrayishCyan);
   color: var(--VeryDarkCyan);
+}
+
+/* Error */
+[data-error="true"] {
+  position: relative;
+}
+
+.error {
+  outline: 2px solid rgb(231, 97, 97);
+}
+
+[data-error="true"]::after {
+  content: "Can't be zero";
+  position: absolute;
+  right: 0;
+  color: rgb(224, 77, 77);
+  z-index: 11111;
+}
+
+.error:hover,
+.error:focus-visible {
+  outline: 2px solid rgb(224, 77, 77);
 }
