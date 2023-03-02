@@ -3,11 +3,12 @@
       Root Colors
       ===============================   */
   --StrongCyan: hsl(172, 67%, 45%);
+  --StrongCyan-hover: hsl(172, 67%, 35%);
   --VeryDarkCyan: hsl(183, 100%, 15%);
   --DarkGrayishCyan: hsl(186, 14%, 43%);
   --GrayishCyan: hsl(184, 14%, 56%);
   --LightGrayishCyan: hsl(185, 41%, 84%);
-  --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+  --VeryLightGrayishCyan: hsl(189, 63%, 92%);
   --White: hsl(0, 0%, 100%);
 
   /* ===============================
@@ -28,9 +29,37 @@
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-fontsize);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-700);
+  background-color: var(--LightGrayishCyan);
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(100%, 1fr);
+  place-content: center;
+}
+
+.intro h1 {
+  text-align: center;
+  letter-spacing: 0.4em;
+  font-size: 1.75rem;
+  color: var(--DarkGrayishCyan);
+  margin: 2rem auto;
+}
+
+.intro span {
+  display: block;
 }
 
 /* ==============================
 Layout
 ============================== */
+
+main {
+  margin-bottom: 1.5rem;
+}
+
+.intro,
+.card {
+  max-width: 1024px;
+  margin-inline: auto;
+}

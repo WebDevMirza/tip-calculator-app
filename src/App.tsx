@@ -1,9 +1,19 @@
 import "./assets/styles/app.css";
+import Card from "./components/Card";
 
 function App() {
   return (
     <>
-      <h1>app</h1>
+      <main>
+        <div className="intro">
+          <h1>
+            <span>SPLI</span>
+            <span>TTER</span>
+          </h1>
+        </div>
+
+        <Card />
+      </main>
     </>
   );
 }
