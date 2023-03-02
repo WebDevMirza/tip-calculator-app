@@ -15,7 +15,6 @@ const Card = () => {
       setError(true);
       return;
     }
-    setError(false);
 
     let tipPerPerson = (bill * tip) / 100 / people;
     setTAPP(() => {
@@ -24,13 +23,15 @@ const Card = () => {
 
     setTotalAPP(() => {
       let billPerPerson = bill / people;
-      return billPerPerson + tipPerPerson;
+      return error ? 0.0 : billPerPerson + tipPerPerson;
     });
+
+    setError(false);
   }, [bill, tip, people]);
 
   useEffect(() => {
     setError(false);
-  });
+  }, []);
 
   document.querySelector("body")?.addEventListener("keydown", (e) => {
     if (e.key != "Enter") {
