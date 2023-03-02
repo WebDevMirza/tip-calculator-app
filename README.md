@@ -11,7 +11,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 ## Screenshot
 
 <img src="./ss/s1.webp" width="800">
-<img src="./ss/s2.webp" width="375">
+<img src="./ss/s3.webp" width="375">
 
 ## Author
 
