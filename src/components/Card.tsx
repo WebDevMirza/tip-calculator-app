@@ -19,7 +19,7 @@ const Card = () => {
               <button className="btn-normal">15%</button>
               <button className="btn-normal">25%</button>
               <button className="btn-normal">50%</button>
-              <button className="btn-custom">Custom</button>
+              <input type="number" name="number" className="btn-custom" placeholder="Custom" />
             </div>
           </div>
           <div className="gocho-people">
