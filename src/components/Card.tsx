@@ -141,7 +141,7 @@ const Card = () => {
         <div className="display-section">
           <div className="amount">
             <div className="left">
-              <h3>Tip Amount</h3>
+              <p className="h3">Tip Amount</p>
               <p>/ person</p>
             </div>
             <div className="right">
@@ -151,7 +151,7 @@ const Card = () => {
 
           <div className="total">
             <div className="left">
-              <h3>Total</h3>
+              <p className="h3">Total</p>
               <p>/ person</p>
             </div>
             <div className="right">

@@ -130,7 +130,7 @@ input::placeholder {
   gap: 2rem;
 }
 
-.display-section h3 {
+.display-section .h3 {
   color: var(--VeryLightGrayishCyan);
 }
 
@@ -152,7 +152,7 @@ input::placeholder {
 }
 
 .left {
-  flex-basis: 90px;
+  flex-basis: 110px;
 }
 
 .amount {
